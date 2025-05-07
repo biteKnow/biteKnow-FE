@@ -1,0 +1,33 @@
+name: Daily Fact Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 기준, 한국 시간으로 오전 9시
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run script to append new fact
+        run: node scripts/addFact.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add facts/facts.json
+          git commit -m "자동 추가: 새로운 상식 추가"
+          git push
