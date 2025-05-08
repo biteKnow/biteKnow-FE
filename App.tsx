@@ -1,32 +1,59 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import facts from './facts/facts.json';
-
-const today = new Date();
-const koreaToday = new Date(today.getTime() + 9 * 60 * 60 * 1000); // KST 보정
-const dateOnly = koreaToday.toISOString().split('T')[0];
-console.log(dateOnly);
-const fact = facts.find(f => f.date === dateOnly);
+import React, { useEffect, useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import Header from './components/Header';
+import NoticeBar from './components/NoticeBar';
+import FactCard from './components/FactCard';
+import Loading from './components/Loading';
+import { Fact } from './types';
 
 export default function App() {
-  console.log(fact);
-  console.log(today);
+  const [fact, setFact] = useState<Fact | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+
+    fetch('https://raw.githubusercontent.com/biteKnow/biteKnow-FE/main/facts/facts.json')
+      .then(res => res.json())
+      .then((data: Fact[]) => {
+        const todayFact = data.find((f: Fact) => f.date === today);
+        setFact(todayFact || null);
+      })
+      .catch(err => {
+        console.error('❌ 오류:', err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <View style={styles.container}>
-      {fact ? (
-        <>
-          <Text style={styles.title}>{fact.title}</Text>
-          <Text style={styles.content}>{fact.content}</Text>
-        </>
-      ) : (
-        <Text>오늘의 지식이 준비되지 않았어요 😥</Text>
-      )}
+      <Header />
+      <NoticeBar />
+      <View style={styles.contentContainer}>
+        <FactCard fact={fact} />
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
-  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 16, textAlign: 'center' },
-  content: { fontSize: 18, textAlign: 'center' },
+  container: { 
+    flex: 1, 
+    backgroundColor: '#f5f8fa',
+  },
+  contentContainer: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingBottom: 20,
+    paddingTop: 20,
+    marginTop: -10,
+  },
 });
