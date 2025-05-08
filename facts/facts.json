@@ -1,14 +1,98 @@
 [
   {
-    "date": "2025-05-07",
-    "title": "문어는 심장이 3개다",
+    "date": "2025-05-08",
+    "title": "달에는 바람이 없다",
+    "content": "달에는 대기가 없어 바람이 존재하지 않으며, 이는 달 표면에 남은 발자국이 오래 유지되는 이유다.",
+    "imageUrl": "https://images.pexels.com/photos/23769/pexels-photo.jpg"
+  },
+  {
+    "date": "2025-05-09",
+    "title": "고래는 노래를 부른다",
+    "content": "혹등고래는 복잡한 노래를 부르며, 이는 수 킬로미터 떨어진 곳까지 전달된다.",
+    "imageUrl": "https://images.pexels.com/photos/459449/pexels-photo-459449.jpeg"
+  },
+  {
+    "date": "2025-05-10",
+    "title": "사람의 심장은 하루에 약 10만 번 뛴다",
+    "content": "평균적으로 사람의 심장은 하루에 약 10만 번 박동하며, 이는 평생 약 30억 번에 해당한다.",
+    "imageUrl": "https://images.pexels.com/photos/433267/pexels-photo-433267.jpeg"
+  },
+  {
+    "date": "2025-05-11",
+    "title": "벌은 수학을 할 수 있다",
+    "content": "연구에 따르면 벌은 간단한 수학 연산을 수행할 수 있으며, 0의 개념도 이해할 수 있다.",
+    "imageUrl": "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg"
+  },
+  {
+    "date": "2025-05-12",
+    "title": "바나나는 방사능을 띤다",
+    "content": "바나나는 칼륨-40을 포함하고 있어 미량의 방사능을 방출하지만, 인체에 해를 끼치지 않는다.",
+    "imageUrl": "https://images.pexels.com/photos/41957/banana-fruit-food-healthy-41957.jpeg"
+  },
+  {
+    "date": "2025-05-13",
+    "title": "문어는 심장이 세 개다",
     "content": "문어는 두 개의 아가미 쪽에 각각 하나, 나머지 하나는 온몸에 혈액을 공급하기 위한 심장을 갖고 있다.",
     "imageUrl": "https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg"
   },
   {
-    "date": "2025-05-10",
+    "date": "2025-05-14",
     "title": "코끼리는 점프할 수 없다",
     "content": "코끼리는 몸집이 무겁고 다리 구조상 네 발을 동시에 띄울 수 없어 점프를 못 한다.",
-    "imageUrl": "https://www.pexels.com/ko-kr/photo/1054655/"
+    "imageUrl": "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg"
+  },
+  {
+    "date": "2025-05-15",
+    "title": "사람의 뇌는 밤에 더 활발하다",
+    "content": "연구에 따르면 사람의 뇌는 낮보다 밤에 더 활발하게 활동하며, 이는 꿈과 관련이 있다.",
+    "imageUrl": "https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg"
+  },
+  {
+    "date": "2025-05-16",
+    "title": "펭귄은 무릎이 있다",
+    "content": "펭귄은 짧은 다리와 깃털로 인해 무릎이 보이지 않지만, 실제로는 무릎 관절을 가지고 있다.",
+    "imageUrl": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg"
+  },
+  {
+    "date": "2025-05-17",
+    "title": "사람의 DNA는 바나나와 60% 유사하다",
+    "content": "인간과 바나나는 약 60%의 유전자를 공유하며, 이는 생명의 공통 조상을 나타낸다.",
+    "imageUrl": "https://images.pexels.com/photos/461208/pexels-photo-461208.jpeg"
+  },
+  {
+    "date": "2025-05-18",
+    "title": "달에는 바람이 없다",
+    "content": "달에는 대기가 없어 바람이 존재하지 않으며, 이는 달 표면에 남은 발자국이 오래 유지되는 이유다.",
+    "imageUrl": "https://images.pexels.com/photos/23769/pexels-photo.jpg"
+  },
+  {
+    "date": "2025-05-19",
+    "title": "고래는 노래를 부른다",
+    "content": "혹등고래는 복잡한 노래를 부르며, 이는 수 킬로미터 떨어진 곳까지 전달된다.",
+    "imageUrl": "https://images.pexels.com/photos/459449/pexels-photo-459449.jpeg"
+  },
+  {
+    "date": "2025-05-20",
+    "title": "사람의 심장은 하루에 약 10만 번 뛴다",
+    "content": "평균적으로 사람의 심장은 하루에 약 10만 번 박동하며, 이는 평생 약 30억 번에 해당한다.",
+    "imageUrl": "https://images.pexels.com/photos/433267/pexels-photo-433267.jpeg"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "달에는 바람이 없다",
+    "content": "달에는 대기가 없어 바람이 존재하지 않으며, 이는 달 표면에 남은 발자국이 오래 유지되는 이유다.",
+    "imageUrl": "https://images.pexels.com/photos/23769/pexels-photo.jpg"
+  },
+  {
+    "date": "2025-05-22",
+    "title": "고래는 노래를 부른다",
+    "content": "혹등고래는 복잡한 노래를 부르며, 이는 수 킬로미터 떨어진 곳까지 전달된다.",
+    "imageUrl": "https://images.pexels.com/photos/459449/pexels-photo-459449.jpeg"
+  },
+  {
+    "date": "2025-05-23",
+    "title": "사람의 심장은 하루에 약 10만 번 뛴다",
+    "content": "평균적으로 사람의 심장은 하루에 약 10만 번 박동하며, 이는 평생 약 30억 번에 해당한다.",
+    "imageUrl": "https://images.pexels.com/photos/433267/pexels-photo-433267.jpeg"
   }
 ]
