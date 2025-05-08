@@ -13,7 +13,7 @@ export default function App() {
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
 
-    fetch('https://raw.githubusercontent.com/biteKnow/biteKnow-FE/main/facts/facts.json')
+    fetch('https://raw.githubusercontent.com/biteKnow/biteKnow-FE/main/contents/facts.json')
       .then(res => res.json())
       .then((data: Fact[]) => {
         const todayFact = data.find((f: Fact) => f.date === today);
